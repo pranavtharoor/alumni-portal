@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+<style>
+body {
+  background-image: url("iecse_landingpage.png");
+  background-repeat: no-repeat;
+  background-size: 1370px 680px;
+  position: relative;
+  
+}
+button.CheckBox {
+	transform: translate(1250px,-14px);
+	color: #FF4C70;
+	font-size: 20px;
+	font-family: Segoe UI;
+	background-color: #EDB2C0;
+	cursor: pointer;
+}
+button.CheckBox:hover {
+	background-color: #753E4B;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  transform: translate(1200px,-30px);
+  background-color: #f1f1f1;
+  min-width: 115px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.dropdown-content a:hover {
+	background-color: #C4C0C1;
+}
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.show {display: block;}
+.container img.nail{
+	width: 50px;
+	height: auto;
+	transform: translate(170px,20px);
+}
+.container img.nail2{
+	width: 50px;
+	height: auto;
+	transform: translate(580px,470px);
+}
+
+.container img.nail3{
+	width: 50px;
+	height: auto;
+	transform: translate(790px,100px);
+}
+
+.container img.nail4{
+	width: 50px;
+	height: auto;
+	transform: translate(1040px,140px);
+}
+
+.container img.pc1{
+	width: 50px;
+	height: auto;
+	transform: translate(190px,90px);
+}
+.container img.pc2{
+	width: 50px;
+	height: auto;
+	transform: translate(935px,350px);
+}
+.container img.pc3{
+	width: 50px;
+	height: auto;
+	transform: translate(60px,410px);
+}
+.container img.pc4{
+	width: 50px;
+	height: auto;
+	transform: translate(-300px,140px);
+}
+.container img.and1{
+	width: 50px;
+	height: auto;
+	transform: translate(220px,30px);
+}
+.container img.and2{
+	width: 50px;
+	height: auto;
+	transform: translate(610px,500px);
+}
+.container img.and3{
+	width: 50px;
+	height: auto;
+	transform: translate(380px,280px);
+}
+.container img.and4{
+	width: 50px;
+	height: auto;
+	transform: translate(-520px,370px);
+}
+.container img.pen1{
+	width: 50px;
+	height: auto;
+	transform: translate(450px,30px);
+}
+.container img.pen2{
+	width: 50px;
+	height: auto;
+	transform: translate(150px,410px);
+}
+.container img.pen3{
+	width: 50px;
+	height: auto;
+	transform: translate(-580px,500px);
+}
+.container img.pen4{
+	width: 50px;
+	height: auto;
+	transform: translate(-450px,280px);
+}
+.container img.logo{
+	width: 500px;
+	height: auto;
+	transform: translate(410px,20px);
+}
+.container img.wecode{
+	width: 400px;
+	height: auto;
+	transform: translate(0px,20px);
+}
+.container img.official{
+	width: 800px;
+	height: auto;
+	transform: translate(293px,90px);
+}
+.container img.iecse{
+	width: 110px;
+	height: auto;
+	transform: translate(-800px,-520px);
+}
+/*.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}*/
+
+/*p.test {
+	position: relative;
+}*/
+</style>
+<body>
+	<p class = "test"></p>
+	<div class="alumni_info">
+		<button class="CheckBox" onclick="dropdown()">ALUMNI</button>
+		<ul id="myDropdown" class="dropdown-content">
+    		<a href="#2012">2012-2013</a>
+    		<a href="#2013">2013-2014</a>
+    		<a href="#2014">2014-2015</a>
+    		<a href="#2015">2015-2016</a>
+    		<a href="#2016">2016-2017</a>
+    		<a href="#2017">2017-2018</a>
+    		<a href="#2018">2018-2019</a>
+  		</ul>
+  	</div>
+  	<div class="container">
+    	<img src="nail.png" class="nail">
+  		<img src="nail.png" class="nail2">
+  		<img src="nail.png" class="nail3">
+  		<img src="nail.png" class="nail4">
+  		<img src="pc.png" class="pc1">
+  		<img src="pc.png" class="pc2">
+  		<img src="pc.png" class="pc3">
+  		<img src="pc.png" class="pc4">
+  		<img src="android.png" class="and1">
+  		<img src="android.png" class="and2">
+  		<img src="android.png" class="and3">
+  		<img src="android.png" class="and4">
+  		<img src="pent.png" class="pen1">
+  		<img src="pent.png" class="pen2">
+  		<img src="pent.png" class="pen3">
+  		<img src="pent.png" class="pen4">
+  		<img src="logo.png" class="logo">
+  		<img src="wecode.png" class="wecode">
+  		<img src="official.png" class="official">
+  		<img src="iecse.png" class="iecse">
+	</div>
+</body>
+<script>
+	function dropdown(){
+		document.getElementById("myDropdown").classList.toggle("show");
+	}
+
+
+	window.onclick = function(event) {
+  if (!event.target.matches('.CheckBox')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+</html>
