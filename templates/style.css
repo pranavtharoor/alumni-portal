@@ -1,0 +1,148 @@
+body{
+	background-image: linear-gradient(#ffdcba ,white);
+	background-size: cover;
+	background-repeat: no-repeat;
+	margin: 0;
+	padding:0;
+}
+.person img{
+	height: 130px;
+	width: auto;
+	border-radius:50%;
+	cursor: pointer;
+}
+.boxer{
+	max-width: 80%;
+	display:flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin:auto;
+}
+.person{
+	width: 130px;
+	text-align: center;
+	margin: 20px 40px;
+}
+.person .named{
+	font-family: Helvetica;
+}
+.person .positiond{
+	font-family:"Segoe UI";
+	color: #fe0000;
+}
+h1{
+	text-align: center;
+	font-family: "Segoe UI Light";
+	font-family: 100;
+}
+.head{
+	position: sticky;
+	width: 100%;
+	top: 0;
+	opacity: 0.85;
+	background-color: white;
+	margin:0;
+	padding: 0;
+	height: 50px;
+	vertical-align:middle;
+}
+.head img{
+	height: 30px;
+	width: auto;
+	padding: 10px;
+}
+.head .drop{
+	height: 25px;
+	float: right;
+	cursor: pointer;
+}
+/*@media (min-width:600px){*/
+	.dropdown{
+		position: fixed;
+		right: 0;
+		top: 50px;
+		/*bottom: 100%;*/
+		width: 200px;
+		height: auto;
+		border-bottom-right-radius: 10px;
+		border-bottom-left-radius: 10px;
+		max-height: calc(100% - 50px); 
+		overflow: auto;
+		display:none;
+	}
+/*}*/
+/*@media (max-width: 599px){
+
+	.dropdown{
+				position: fixed;
+		top: 50px;
+		border-bottom-right-radius: 10px;
+		border-bottom-left-radius: 10px;
+		max-height: 100%;
+		width: 100%; 
+		overflow: auto;
+		display:none;
+		z-index: 3;
+	}
+}*/
+.dropdown .dropbox{
+	text-align: center;
+	vertical-align: middle;
+	border-bottom: 0.7px solid #ffdcba ;
+	/*padding: 10px;*/
+	height: 50px;
+	background-color:white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-family: "Segoe UI"; 
+	opacity: 0.85;
+}
+.dropdown a{
+	text-decoration: none;
+		color: black;
+}
+.dropbox:hover, .dropbox:active{
+	font-size: 1.4em;
+	cursor: pointer;
+}
+.card{
+	box-shadow: 10px 10px 32px -8px rgba(0,0,0,0.5);
+	width: 250px;
+	max-height: 600px;
+	padding-bottom: 10px; 
+	background-color: white;
+	border-radius:10px;
+	overflow: hidden;
+	position: fixed;
+	top:20%;
+	left:41%;
+	margin: auto;
+	display: none;
+}
+.card img{
+	width: 100%;
+}
+.card .named{
+	text-transform: uppercase;
+	font-family: "Source Sans Pro";
+	font-size:1.15em;
+	text-align: center;
+	padding: 5px;
+	display: block;
+}
+.card .positiond{
+	font-family: "Segoe UI Light";
+	text-align: center;
+	display: block;
+}
+.card .links{
+	padding-top: 10px;
+	display: flex;
+	justify-content: center;
+}
+.links img{
+	width: 25px;
+	height: 25px;
+	padding: 0 3px;
+}
